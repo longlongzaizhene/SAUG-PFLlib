@@ -1,15 +1,21 @@
-﻿dataset,num_classes,method,ld_mode,ld_tau,random_upload_ratio,matched_reference,seeds,global_rounds,num_clients,join_ratio,batch_size,local_learning_rate,local_epochs,eval_gap,model,algorithm,script,verification_status
-Cifar10,10,Off,off,NA,NA,NA,0;1;2;3;4,50,20,1.0,10,0.005,1,1,CNN,FedALA,commands/cifar10_main.ps1,verified_from_code_command_record_and_manuscript
-Cifar10,10,Speed,speed,NA,NA,speed_threshold=100.0,0;1;2;3;4,50,20,1.0,10,0.005,1,1,CNN,FedALA,commands/cifar10_main.ps1,verified_from_code_command_record_and_manuscript
-Cifar10,10,Random-Gate,random,NA,0.5398,SAUG_tau=0.4,0;1;2;3;4,50,20,1.0,10,0.005,1,1,CNN,FedALA,commands/random_gate.ps1,verified_from_code_command_record_and_manuscript
-Cifar10,10,SAUG,score,0.4,NA,NA,0;1;2;3;4,50,20,1.0,10,0.005,1,1,CNN,FedALA,commands/cifar10_main.ps1,verified_from_code_command_record_and_manuscript
-Cifar10,10,SAUG,score,0.5,NA,NA,0;1;2;3;4,50,20,1.0,10,0.005,1,1,CNN,FedALA,commands/cifar10_main.ps1,verified_from_code_command_record_and_manuscript
-Cifar10,10,SAUG,score,0.6,NA,NA,0;1;2;3;4,50,20,1.0,10,0.005,1,1,CNN,FedALA,commands/cifar10_main.ps1,verified_from_code_command_record_and_manuscript
-Cifar10,10,SAUG,score,0.7,NA,NA,0;1;2;3;4,50,20,1.0,10,0.005,1,1,CNN,FedALA,commands/cifar10_main.ps1,verified_from_code_command_record_and_manuscript
-Cifar100,100,Off,off,NA,NA,NA,0;1;2;3;4,50,20,1.0,10,0.005,1,1,CNN,FedALA,commands/cifar100_main.ps1,verified_from_code_command_record_and_manuscript
-Cifar100,100,Speed,speed,NA,NA,speed_threshold=100.0,0;1;2;3;4,50,20,1.0,10,0.005,1,1,CNN,FedALA,commands/cifar100_main.ps1,verified_from_code_command_record_and_manuscript
-Cifar100,100,Random-Gate,random,NA,0.9156,SAUG_tau=0.7,0;1;2;3;4,50,20,1.0,10,0.005,1,1,CNN,FedALA,commands/random_gate.ps1,verified_from_code_command_record_and_manuscript
-Cifar100,100,SAUG,score,0.4,NA,NA,0;1;2;3;4,50,20,1.0,10,0.005,1,1,CNN,FedALA,commands/cifar100_main.ps1,verified_from_code_command_record_and_manuscript
-Cifar100,100,SAUG,score,0.5,NA,NA,0;1;2;3;4,50,20,1.0,10,0.005,1,1,CNN,FedALA,commands/cifar100_main.ps1,verified_from_code_command_record_and_manuscript
-Cifar100,100,SAUG,score,0.6,NA,NA,0;1;2;3;4,50,20,1.0,10,0.005,1,1,CNN,FedALA,commands/cifar100_main.ps1,verified_from_code_command_record_and_manuscript
-Cifar100,100,SAUG,score,0.7,NA,NA,0;1;2;3;4,50,20,1.0,10,0.005,1,1,CNN,FedALA,commands/cifar100_main.ps1,verified_from_code_command_record_and_manuscript
+﻿dataset,num_classes,method,ld_mode,ld_tau,random_upload_ratio,ld_use_speed,ld_use_link,ld_use_stale,target_upload_ratio,realized_upload_ratio,matched_reference,seeds,global_rounds,num_clients,join_ratio,batch_size,local_learning_rate,local_epochs,eval_gap,model,algorithm,script,verification_status
+Cifar10,10,Off,off,NA,NA,NA,NA,NA,NA,NA,NA,0;1;2;3;4,50,20,1.0,10,0.005,1,1,CNN,FedALA,commands/cifar10_main.ps1,verified_from_code_command_record_and_manuscript
+Cifar10,10,Speed,speed,NA,NA,NA,NA,NA,NA,NA,speed_threshold=100.0,0;1;2;3;4,50,20,1.0,10,0.005,1,1,CNN,FedALA,commands/cifar10_main.ps1,verified_from_code_command_record_and_manuscript
+Cifar10,10,Random-Gate,random,NA,0.5398,NA,NA,NA,NA,NA,SAUG_tau=0.4,0;1;2;3;4,50,20,1.0,10,0.005,1,1,CNN,FedALA,commands/random_gate.ps1,verified_from_code_command_record_and_manuscript
+Cifar10,10,SAUG,score,0.4,NA,1,1,1,NA,NA,NA,0;1;2;3;4,50,20,1.0,10,0.005,1,1,CNN,FedALA,commands/cifar10_main.ps1,verified_from_code_command_record_and_manuscript
+Cifar10,10,SAUG,score,0.5,NA,1,1,1,NA,NA,NA,0;1;2;3;4,50,20,1.0,10,0.005,1,1,CNN,FedALA,commands/cifar10_main.ps1,verified_from_code_command_record_and_manuscript
+Cifar10,10,SAUG,score,0.6,NA,1,1,1,NA,NA,NA,0;1;2;3;4,50,20,1.0,10,0.005,1,1,CNN,FedALA,commands/cifar10_main.ps1,verified_from_code_command_record_and_manuscript
+Cifar10,10,SAUG,score,0.7,NA,1,1,1,NA,NA,NA,0;1;2;3;4,50,20,1.0,10,0.005,1,1,CNN,FedALA,commands/cifar10_main.ps1,verified_from_code_command_record_and_manuscript
+Cifar100,100,Off,off,NA,NA,NA,NA,NA,NA,NA,NA,0;1;2;3;4,50,20,1.0,10,0.005,1,1,CNN,FedALA,commands/cifar100_main.ps1,verified_from_code_command_record_and_manuscript
+Cifar100,100,Speed,speed,NA,NA,NA,NA,NA,NA,NA,speed_threshold=100.0,0;1;2;3;4,50,20,1.0,10,0.005,1,1,CNN,FedALA,commands/cifar100_main.ps1,verified_from_code_command_record_and_manuscript
+Cifar100,100,Random-Gate,random,NA,0.9156,NA,NA,NA,NA,NA,SAUG_tau=0.7,0;1;2;3;4,50,20,1.0,10,0.005,1,1,CNN,FedALA,commands/random_gate.ps1,verified_from_code_command_record_and_manuscript
+Cifar100,100,SAUG,score,0.4,NA,1,1,1,NA,NA,NA,0;1;2;3;4,50,20,1.0,10,0.005,1,1,CNN,FedALA,commands/cifar100_main.ps1,verified_from_code_command_record_and_manuscript
+Cifar100,100,SAUG,score,0.5,NA,1,1,1,NA,NA,NA,0;1;2;3;4,50,20,1.0,10,0.005,1,1,CNN,FedALA,commands/cifar100_main.ps1,verified_from_code_command_record_and_manuscript
+Cifar100,100,SAUG,score,0.6,NA,1,1,1,NA,NA,NA,0;1;2;3;4,50,20,1.0,10,0.005,1,1,CNN,FedALA,commands/cifar100_main.ps1,verified_from_code_command_record_and_manuscript
+Cifar100,100,SAUG,score,0.7,NA,1,1,1,NA,NA,NA,0;1;2;3;4,50,20,1.0,10,0.005,1,1,CNN,FedALA,commands/cifar100_main.ps1,verified_from_code_command_record_and_manuscript
+Cifar10,10,SAUG w/o link quality,score,0.52165,NA,1,0,1,0.7070,0.7072,Full_SAUG_tau=0.5,0;1;2;3;4,50,20,1.0,10,0.005,1,1,CNN,FedALA,commands/ablation_budget_matched.ps1,verified_from_archived_command_thresholds_and_manuscript
+Cifar10,10,SAUG w/o speed,score,0.41964,NA,0,1,1,0.7070,0.7054,Full_SAUG_tau=0.5,0;1;2;3;4,50,20,1.0,10,0.005,1,1,CNN,FedALA,commands/ablation_budget_matched.ps1,verified_from_archived_command_thresholds_and_manuscript
+Cifar10,10,SAUG w/o staleness,score,0.55940,NA,1,1,0,0.7070,0.7066,Full_SAUG_tau=0.5,0;1;2;3;4,50,20,1.0,10,0.005,1,1,CNN,FedALA,commands/ablation_budget_matched.ps1,verified_from_archived_command_thresholds_and_manuscript
+Cifar100,100,SAUG w/o link quality,score,0.52165,NA,1,0,1,0.7070,0.7072,Full_SAUG_tau=0.5,0;1;2;3;4,50,20,1.0,10,0.005,1,1,CNN,FedALA,commands/ablation_budget_matched.ps1,verified_from_archived_command_thresholds_and_manuscript
+Cifar100,100,SAUG w/o speed,score,0.41964,NA,0,1,1,0.7070,0.7054,Full_SAUG_tau=0.5,0;1;2;3;4,50,20,1.0,10,0.005,1,1,CNN,FedALA,commands/ablation_budget_matched.ps1,verified_from_archived_command_thresholds_and_manuscript
+Cifar100,100,SAUG w/o staleness,score,0.55940,NA,1,1,0,0.7070,0.7066,Full_SAUG_tau=0.5,0;1;2;3;4,50,20,1.0,10,0.005,1,1,CNN,FedALA,commands/ablation_budget_matched.ps1,verified_from_archived_command_thresholds_and_manuscript

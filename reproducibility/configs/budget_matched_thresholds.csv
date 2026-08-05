@@ -1,0 +1,4 @@
+﻿variant,matched_tau,ld_use_speed,ld_use_link,ld_use_stale,target_upload_ratio,realized_upload_ratio,absolute_difference
+wolink,0.52165,1,0,1,0.7070,0.7072,0.0002
+wospeed,0.41964,0,1,1,0.7070,0.7054,0.0016
+wostale,0.55940,1,1,0,0.7070,0.7066,0.0004

@@ -41,7 +41,7 @@ CIFAR-10 uses `-ncl 10`, and CIFAR-100 uses `-ncl 100`.
 | Staleness weight, `ld_gamma` | 0.2 |
 | Speed normalization upper bound, `ld_v_max` | 120.0 |
 | Staleness normalization upper bound, `ld_k_max` | 5.0 |
-| Evaluated thresholds | 0.4, 0.5, 0.6, 0.7 |
+| Main-experiment thresholds | 0.4, 0.5, 0.6, 0.7 |
 
 The score-mode decision is:
 
@@ -59,7 +59,33 @@ score >  tau  -> local-only
 
 The target probability is the per-selected-client upload probability.
 The realized upload ratio may differ slightly over a finite number of
-rounds and random seeds.
+rounds and random seeds. The probability `p` is used only by
+Random-Gate.
+
+## Upload-budget-matched state-factor ablation
+
+Full SAUG with `tau = 0.5` is used as the reference:
+
+```text
+target training-wide average upload ratio = 0.7070
+```
+
+For each ablated variant, the removed factor is disabled and the
+remaining enabled weights are renormalized to sum to one.
+
+| Variant | Speed | Link | Staleness | Matched tau | Realized upload ratio | Difference from Full |
+|---|---:|---:|---:|---:|---:|---:|
+| SAUG w/o link quality | 1 | 0 | 1 | 0.52165 | 0.7072 | 0.0002 |
+| SAUG w/o speed | 0 | 1 | 1 | 0.41964 | 0.7054 | 0.0016 |
+| SAUG w/o staleness | 1 | 1 | 0 | 0.55940 | 0.7066 | 0.0004 |
+
+The matched thresholds are shared by CIFAR-10 and CIFAR-100 because
+the upload decisions are generated from the controlled client-state
+trajectories and gating configuration, while the datasets primarily
+affect model accuracy.
+
+The threshold-matching protocol uses the upload ratio only. Accuracy
+and communication cost are not used to select the thresholds.
 
 ## Synthetic client-state trajectories
 
@@ -97,11 +123,10 @@ real-network traffic.
 
 ## Verified command scope
 
-The command files in this package cover:
+The command files cover:
 
 - Off, Speed, and SAUG on CIFAR-10;
 - Off, Speed, and SAUG on CIFAR-100;
 - Random-Gate on both datasets;
+- upload-budget-matched state-factor ablations on both datasets;
 - a short smoke test.
-
-State-factor ablation commands are not included in this verified batch.
