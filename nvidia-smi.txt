@@ -1,0 +1,46 @@
+﻿Wed Aug  5 14:56:56 2026       
++-----------------------------------------------------------------------------------------+
+| NVIDIA-SMI 576.88                 Driver Version: 576.88         CUDA Version: 12.9     |
+|-----------------------------------------+------------------------+----------------------+
+| GPU  Name                  Driver-Model | Bus-Id          Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |           Memory-Usage | GPU-Util  Compute M. |
+|                                         |                        |               MIG M. |
+|=========================================+========================+======================|
+|   0  NVIDIA GeForce RTX 5060      WDDM  |   00000000:01:00.0  On |                  N/A |
+|  0%   45C    P0             32W /  145W |    2590MiB /   8151MiB |      1%      Default |
+|                                         |                        |                  N/A |
++-----------------------------------------+------------------------+----------------------+
+                                                                                         
++-----------------------------------------------------------------------------------------+
+| Processes:                                                                              |
+|  GPU   GI   CI              PID   Type   Process name                        GPU Memory |
+|        ID   ID                                                               Usage      |
+|=========================================================================================|
+|    0   N/A  N/A            1180    C+G   ...p\app-3.6.3\GitHubDesktop.exe      N/A      |
+|    0   N/A  N/A            1904    C+G   C:\Windows\System32\dwm.exe           N/A      |
+|    0   N/A  N/A            2948    C+G   ...5n1h2txyewy\TextInputHost.exe      N/A      |
+|    0   N/A  N/A            5704    C+G   ...h_cw5n1h2txyewy\SearchApp.exe      N/A      |
+|    0   N/A  N/A            7340    C+G   ...ntrolPanel\SystemSettings.exe      N/A      |
+|    0   N/A  N/A            7476    C+G   ...ice\root\Office16\WINWORD.EXE      N/A      |
+|    0   N/A  N/A            8832    C+G   ...0.327\runtime\WeChatAppEx.exe      N/A      |
+|    0   N/A  N/A            9196    C+G   ...0.4078.105\msedgewebview2.exe      N/A      |
+|    0   N/A  N/A            9988    C+G   ...IA App\CEF\NVIDIA Overlay.exe      N/A      |
+|    0   N/A  N/A           10396    C+G   ...IA App\CEF\NVIDIA Overlay.exe      N/A      |
+|    0   N/A  N/A           10784    C+G   ...h_cw5n1h2txyewy\SearchApp.exe      N/A      |
+|    0   N/A  N/A           13484    C+G   ...ram Files\Tencent\QQNT\QQ.exe      N/A      |
+|    0   N/A  N/A           15248    C+G   ...0.4078.105\msedgewebview2.exe      N/A      |
+|    0   N/A  N/A           15972    C+G   ...0.6028\CefRendererProcess.exe      N/A      |
+|    0   N/A  N/A           16548    C+G   ...8bbwe\PhoneExperienceHost.exe      N/A      |
+|    0   N/A  N/A           17040    C+G   C:\Windows\explorer.exe               N/A      |
+|    0   N/A  N/A           17684    C+G   ...0.4078.105\msedgewebview2.exe      N/A      |
+|    0   N/A  N/A           17792    C+G   ...ray\AweSun\flutter\AweSun.exe      N/A      |
+|    0   N/A  N/A           19916    C+G   ...t\Edge\Application\msedge.exe      N/A      |
+|    0   N/A  N/A           20524    C+G   ...al\cxstudy\latest\cxstudy.exe      N/A      |
+|    0   N/A  N/A           20984    C+G   ...7FtNQJHS1aIonDtY0\draw.io.exe      N/A      |
+|    0   N/A  N/A           22632    C+G   ...ram Files\Tencent\QQNT\QQ.exe      N/A      |
+|    0   N/A  N/A           23496    C+G   ...xyewy\ShellExperienceHost.exe      N/A      |
+|    0   N/A  N/A           25392    C+G   ...0.4078.105\msedgewebview2.exe      N/A      |
+|    0   N/A  N/A           27824    C+G   ...0-rc.13_win_x64 3\Steam++.exe      N/A      |
+|    0   N/A  N/A           31540    C+G   ...ng\Sysdiag\bin\HipsDaemon.exe      N/A      |
+|    0   N/A  N/A           33024    C+G   ...App_cw5n1h2txyewy\LockApp.exe      N/A      |
++-----------------------------------------------------------------------------------------+

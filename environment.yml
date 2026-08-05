@@ -1,0 +1,14 @@
+﻿name: pfllib
+channels:
+  - https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main/
+  - https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free/
+  - https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/r/
+  - https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/pytorch/
+  - https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/conda-forge/
+  - nvidia
+dependencies:
+  - python=3.8
+  - pytorch-cuda=11.8
+  - pytorch==2.0.1
+  - torchvision==0.15.2
+
