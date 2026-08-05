@@ -1,3 +1,6 @@
 /results
 /system/models
 *__pycache__*
+
+# Generated reproducibility outputs
+system/reproducibility_runs/

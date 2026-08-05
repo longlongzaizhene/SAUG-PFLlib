@@ -1,0 +1,26 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it using the metadata below."
+title: "SAUG-PFLlib"
+type: software
+version: "1.0.0"
+license: Apache-2.0
+repository-code: "https://github.com/longlongaizhene/SAUG-PFLlib"
+abstract: >-
+  Implementation and reproducibility package for state-aware upload
+  gating in personalized federated learning for mobile edge environments.
+authors:
+  - family-names: "Long"
+    given-names: "Bang fa"
+    affiliation: "Anhui Normal University"
+  - family-names: "Wang"
+    given-names: "Xiao han"
+    affiliation: "Anhui Normal University"
+  - family-names: "Wu"
+    given-names: "Nian hua"
+    affiliation: "Anhui Normal University"
+keywords:
+  - personalized federated learning
+  - mobile edge learning
+  - state-aware upload gating
+  - communication efficiency
+  - FedALA

@@ -65,20 +65,29 @@ SAUG-PFLlib/
 ├─ system/                     PFLlib framework and SAUG implementation
 ├─ dataset/                    Dataset preparation utilities inherited from PFLlib
 ├─ docs/                       Original PFLlib documentation
+├─ reproducibility/            Verified configurations and execution commands
+│  ├─ README.md
+│  ├─ CONFIGURATION.md
+│  ├─ ABLATION_BUDGET_MATCHED.md
+│  ├─ experiment_manifest.csv
+│  ├─ configs/
+│  │  └─ budget_matched_thresholds.csv
+│  └─ commands/
+│     ├─ cifar10_main.ps1
+│     ├─ cifar100_main.ps1
+│     ├─ random_gate.ps1
+│     ├─ ablation_budget_matched.ps1
+│     └─ smoke_test.ps1
 ├─ environment.yml             Concise Conda environment specification
 ├─ environment-lock.yml        More complete Conda environment specification
 ├─ requirements-lock.txt       Pip package-version snapshot
 ├─ environment-info.txt        Python, PyTorch, CUDA, OS, and GPU information
 ├─ nvidia-smi.txt              NVIDIA driver and GPU information
+├─ DATA_AVAILABILITY.md        Public-data scope and access statement
+├─ CITATION.cff                Software citation metadata
 ├─ README.md                   SAUG project documentation
 ├─ UPSTREAM.md                 Upstream attribution and modification summary
 └─ LICENSE                     Apache License 2.0
-```
-
-Additional reproducibility materials will be organized under:
-
-```text
-reproducibility/
 ```
 
 ## Environment Setup
@@ -122,11 +131,7 @@ The reported experiments use:
 - a Dirichlet non-IID partition with `alpha = 0.1`; and
 - five random seeds: `0`, `1`, `2`, `3`, and `4`.
 
-Detailed dataset-generation commands and client-partition information will be added under:
-
-```text
-reproducibility/
-```
+The verified dataset settings are documented in [`reproducibility/CONFIGURATION.md`](reproducibility/CONFIGURATION.md). The original datasets and private client-partition artifacts are not redistributed in this working public repository.
 
 ## Experimental Strategies
 
@@ -144,12 +149,28 @@ The main SAUG thresholds evaluated in the paper are:
 0.4, 0.5, 0.6, and 0.7
 ```
 
-Exact commands, configurations, and random-seed settings will be organized under:
+The Random-Gate target upload probabilities are:
 
 ```text
-reproducibility/commands/
-reproducibility/configs/
+CIFAR-10: p = 0.5398
+CIFAR-100: p = 0.9156
 ```
+
+The verified commands and configurations are provided in the [`reproducibility`](reproducibility/) directory.
+
+## Reproducibility Materials
+
+The verified implementation, experiment configurations, and execution commands are documented in the following files:
+
+- [Reproducibility guide](reproducibility/README.md)
+- [Verified experimental configuration](reproducibility/CONFIGURATION.md)
+- [Experiment manifest](reproducibility/experiment_manifest.csv)
+- [Upload-budget-matched ablation configuration](reproducibility/ABLATION_BUDGET_MATCHED.md)
+- [Matched ablation thresholds](reproducibility/configs/budget_matched_thresholds.csv)
+- [Experiment commands](reproducibility/commands/)
+- [Data availability statement](DATA_AVAILABILITY.md)
+
+The public repository does not redistribute the original CIFAR datasets, private client-partition artifacts, complete raw experimental logs, or processed result tables. These materials are retained by the authors and may be provided to editors or reviewers through an appropriate controlled-access channel.
 
 ## Recorded Outputs
 
@@ -169,12 +190,7 @@ The processed results reported in the paper include:
 - training-wide average upload ratio; and
 - total emulated uplink communication cost.
 
-Raw logs and analysis scripts will be organized under:
-
-```text
-reproducibility/raw_logs/
-reproducibility/scripts/
-```
+Complete raw experimental logs and processed result tables are retained by the authors and are not included in this working public repository.
 
 ## Reproducibility Scope
 
@@ -195,10 +211,14 @@ The repository currently contains:
 
 - the core SAUG implementation;
 - the modified FedALA client and server logic;
-- the main experiment argument interface; and
-- the Conda, pip, CUDA, and hardware environment specifications.
+- the verified Conda, pip, CUDA, and hardware environment specifications;
+- the main-experiment commands for CIFAR-10 and CIFAR-100;
+- the upload-budget-matched Random-Gate commands;
+- the upload-budget-matched state-factor ablation configuration;
+- the matched ablation thresholds and execution script; and
+- the experiment manifest and data-availability statement.
 
-Experiment commands, selected raw logs, state-generation materials, and analysis scripts are being organized for the submission release.
+Complete raw experimental logs and processed result tables are retained by the authors and are not included in this working public repository.
 
 ## License
 
@@ -208,4 +228,6 @@ See [`LICENSE`](LICENSE) for details.
 
 ## Citation
 
-The archived software citation and Zenodo DOI will be added after the submission release is finalized.
+Software citation metadata are provided in [`CITATION.cff`](CITATION.cff).
+
+The version-specific Zenodo DOI will be added after the `v1.0.0` submission release has been archived.
