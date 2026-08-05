@@ -123,7 +123,13 @@ The experiments use:
 - CIFAR-10; and
 - CIFAR-100.
 
-The original datasets are not redistributed in this repository. Dataset preparation follows the utilities provided by PFLlib.
+The original CIFAR-10 and CIFAR-100 datasets and the client-partition
+files used in the reported experiments are not redistributed in this
+repository.
+
+The repository retains sample MNIST artifacts inherited from the
+upstream PFLlib project. These artifacts are not used in the reported
+CIFAR-10 and CIFAR-100 experiments.
 
 The reported experiments use:
 
