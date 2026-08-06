@@ -10,13 +10,13 @@ abstract: >-
   gating in personalized federated learning for mobile edge environments.
 authors:
   - family-names: "Long"
-    given-names: "Bang fa"
+    given-names: "Bangfa"
     affiliation: "Anhui Normal University"
   - family-names: "Wang"
-    given-names: "Xiao han"
+    given-names: "Xiaohan"
     affiliation: "Anhui Normal University"
   - family-names: "Wu"
-    given-names: "Nian hua"
+    given-names: "Nianhua"
     affiliation: "Anhui Normal University"
 keywords:
   - personalized federated learning
