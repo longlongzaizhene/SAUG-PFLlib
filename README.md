@@ -123,9 +123,14 @@ The experiments use:
 - CIFAR-10; and
 - CIFAR-100.
 
-The original CIFAR-10 and CIFAR-100 datasets and the client-partition
-files used in the reported experiments are not redistributed in this
-repository.
+The original CIFAR-10 and CIFAR-100 benchmark datasets are publicly
+available from their original sources and are not duplicated in this
+software repository.
+
+The client-partition files used in the reported experiments are archived
+separately in the restricted Zenodo supporting-data record:
+
+[https://doi.org/10.5281/zenodo.21815686](https://doi.org/10.5281/zenodo.21815686)
 
 The repository retains sample MNIST artifacts inherited from the
 upstream PFLlib project. These artifacts are not used in the reported
@@ -137,7 +142,8 @@ The reported experiments use:
 - a Dirichlet non-IID partition with `alpha = 0.1`; and
 - five random seeds: `0`, `1`, `2`, `3`, and `4`.
 
-The verified dataset settings are documented in [`reproducibility/CONFIGURATION.md`](reproducibility/CONFIGURATION.md). The original datasets and private client-partition artifacts are not redistributed in this working public repository.
+The verified dataset settings are documented in
+[`reproducibility/CONFIGURATION.md`](reproducibility/CONFIGURATION.md).
 
 ## Experimental Strategies
 
@@ -176,7 +182,21 @@ The verified implementation, experiment configurations, and execution commands a
 - [Experiment commands](reproducibility/commands/)
 - [Data availability statement](DATA_AVAILABILITY.md)
 
-The public repository does not redistribute the original CIFAR datasets, private client-partition artifacts, complete raw experimental logs, or processed result tables. These materials are retained by the authors and may be provided to editors or reviewers through an appropriate controlled-access channel.
+The archived software release, including the source code, environment
+specifications, verified experiment commands, and reproducibility
+documentation, is available in Zenodo:
+
+[https://doi.org/10.5281/zenodo.21807089](https://doi.org/10.5281/zenodo.21807089)
+
+Supporting research data, including the client partitions, per-seed
+experimental logs, processed summary data, and analysis scripts, are
+archived separately in Zenodo:
+
+[https://doi.org/10.5281/zenodo.21815686](https://doi.org/10.5281/zenodo.21815686)
+
+The supporting-data files are restricted during peer review and are
+accessible to editors and reviewers through a private access link. They
+will be made publicly available upon publication of the associated article.
 
 ## Recorded Outputs
 
@@ -196,7 +216,11 @@ The processed results reported in the paper include:
 - training-wide average upload ratio; and
 - total emulated uplink communication cost.
 
-Complete raw experimental logs and processed result tables are retained by the authors and are not included in this working public repository.
+The per-seed raw experimental logs, processed summary data, and analysis
+scripts are archived in the separate Zenodo supporting-data record
+(https://doi.org/10.5281/zenodo.21815686). The files are restricted during
+peer review and will be made publicly available upon publication of the
+associated article.
 
 ## Reproducibility Scope
 
@@ -224,7 +248,10 @@ The repository currently contains:
 - the matched ablation thresholds and execution script; and
 - the experiment manifest and data-availability statement.
 
-Complete raw experimental logs and processed result tables are retained by the authors and are not included in this working public repository.
+The client partitions, per-seed raw experimental logs, processed summary
+data, and analysis scripts are archived separately in Zenodo
+(https://doi.org/10.5281/zenodo.21815686) and are not duplicated in this
+software repository.
 
 ## License
 
@@ -236,4 +263,10 @@ See [`LICENSE`](LICENSE) for details.
 
 Software citation metadata are provided in [`CITATION.cff`](CITATION.cff).
 
-The version-specific Zenodo DOI will be added after the `v1.0.0` submission release has been archived.
+Archived software release:
+
+[https://doi.org/10.5281/zenodo.21807089](https://doi.org/10.5281/zenodo.21807089)
+
+Supporting-data record:
+
+[https://doi.org/10.5281/zenodo.21815686](https://doi.org/10.5281/zenodo.21815686)

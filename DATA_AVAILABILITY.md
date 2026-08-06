@@ -1,16 +1,22 @@
 # Data Availability
 
-This working repository provides the source code, environment
-specifications, verified main-experiment commands, Random-Gate
-commands, and configuration documentation supporting the SAUG study.
+The CIFAR-10 and CIFAR-100 benchmark datasets are publicly available
+from their original sources and are not duplicated in the software
+repository.
 
-The original CIFAR-10 and CIFAR-100 datasets are not redistributed.
+The source code, environment specifications, verified experiment
+commands, matched-ablation configurations, and reproducibility
+documentation are provided in the SAUG-PFLlib software archive:
 
-Complete raw experimental logs, client-partition artifacts, processed
-result tables, and state-factor ablation records are not included in
-this working public repository. These materials are retained by the
-authors and may be supplied to editors or reviewers through an
-appropriate controlled-access channel.
+[https://doi.org/10.5281/zenodo.21807089](https://doi.org/10.5281/zenodo.21807089)
 
-A persistent archived release and its final data-availability wording
-will be prepared after the submission package has been fully verified.
+The client-partition files, per-seed raw experimental logs, processed
+summary data, and analysis scripts supporting the reported results are
+deposited in a separate Zenodo supporting-data record:
+
+[https://doi.org/10.5281/zenodo.21815686](https://doi.org/10.5281/zenodo.21815686)
+
+The supporting-data files are restricted during peer review and are
+available to editors and reviewers through a private access link. The
+files will be made publicly available upon publication of the
+associated article.
